@@ -1,12 +1,103 @@
 <!DOCTYPE html>
-<html lang= "es" >
-    <head>
-        <meta charset="UTF-8">
-        <title>MI CV</title>
-        <link rel="stylesheet" type="text/css" href="./style.css" />
-    </head>
-    <body>
-        <h1>HOLAAAAA </h1>
-    </body>
-</html>   
+<html lang="es-ES">
+<head>
+    <title>Mi CV</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js" defer > </script>
+</head>
+<body>
+    <header >
+        <h1>Arcenio Valdez</h1>
+        <h2>Analista Programador</h2>
+    </header>
 
+    <nav>   
+        <a href="#acerca-de-mi">Acerca de mi</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contactos</a>
+    </nav>
+ <main>
+    <section id="acerca-de-mi">
+     <div>  
+        <h2>Acerca de mi</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sit quae vel modi dolorum reprehenderit
+            ipsam quod id itaque adipisci repellendus, officiis est, illo nam quisquam natus quidem ea rerum!
+        </p>
+     </div>    
+
+    </section>
+
+    <section id="habilidades">
+      <div>  
+        <h2>Habilidades</h2>
+        <ul>
+            <li data-porcentaje="80">HTML</li>
+            <li data-porcentaje="60">CSS</li>
+            <li data-porcentaje="50">JavaScript</li>
+            <li data-porcentaje="10"> Git</li>
+        </ul>
+      </div>  
+    </section>
+    
+    <section id="experiencia">
+      <div>
+        <h2>Experiencia</h2>
+        <ul>
+            <li>
+                <b>Empresa X</b> (2022-presente)
+                <ul>
+                    <li>Desarrollador web junior</li>
+                    <li>Responsable del desarrollo y mantenimiento de la página web de la empresa</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Empresa Y</strong> (2020-2022)
+                <ul>
+                    <li>Diseñador web</li>
+                    <li>Responsable del diseño y maquetación de la página web de la empresa</li>
+                </ul>
+            </li>
+        </ul>
+     </div>  
+    </section>
+    
+    <section id="proyectos">
+       <div>
+        <h2>Proyectos</h2>
+        <ul>
+            <li>
+                <a href="proyecto-1.html">Proyecto 1</a> - Descripción del proyecto 1
+            </li>
+            <li>
+                <a href="proyecto-2.html">Proyecto 2</a> - Descripción del proyecto 2
+            </li>
+        </ul>
+      </div>  
+    </section>
+    <section id="contacto">
+      <div>
+        <h2>Contacto</h2>
+        <p> En caso de interes completar datos en este formulario</p>
+        <form id="datosform" action="#" >
+            <div>
+                <label for="nombre">Nombre:</label><br>
+                <input id="nombre" type="text" size="40" placeholder="Ingrese su nombre"><br>
+                <label for="apellido">Apellido:</label><br>
+                <input id="apellido" type="text" size="40" placeholder="Ingrese su apellido"><br>
+                <label for="mail">Email:</label><br>
+                <input id="email" type= "text" size="40" placeholder="Ingrese su email"><br>
+                <label for="mensaje">mensaje:</label><br>    
+                <textarea id="mensaje" rows="10" cols="30" placeholder="Ingrese su mensaje"></textarea> <br>
+                <input type="button" value="ENVIAR" onclick="validar()"/>  
+            </div>
+            
+        </form>
+      </div> 
+    </section>
+   
+ </main>
+</body>
+</html>
